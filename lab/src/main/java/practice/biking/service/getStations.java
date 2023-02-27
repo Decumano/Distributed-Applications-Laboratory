@@ -8,6 +8,7 @@ import practice.biking.data.Data;
 import practice.biking.data.Stations;
 
 import org.json.JSONObject;
+import org.springframework.web.client.RestTemplate;
 
 import com.google.gson.Gson;
 
@@ -42,11 +43,17 @@ public class getStations {
     @Produces(MediaType.APPLICATION_JSON)
     public Data getStationsData()
     {
+        /*
         Client client = ClientBuilder.newClient();
         WebTarget bicing = client.target("https://api.bsmsa.eu").path("ext/api/bsm/gbfs/v2/en/station_status");
         JSONObject bicingJSON = bicing.request(MediaType.APPLICATION_JSON_TYPE).get(new GenericType<JSONObject>() {});
         Gson gson = new Gson();
         data.setData(gson.fromJson(bicingJSON.toString(), Stations.class));
+        */
+
+        data = new RestTemplate()
+        .getForObject("https://api.bsmsa.eu/ext/api/bsm/gbfs/v2/en/station_status", Data.class);
+
         return data;
     }
 }
