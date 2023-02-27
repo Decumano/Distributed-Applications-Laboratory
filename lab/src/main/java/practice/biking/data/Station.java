@@ -19,6 +19,12 @@ public class Station {
     }
 
     public Station() {
+        station_id = 0;
+        num_bikes_available = 0;
+        num_docks_available = 0;
+        last_reported = 0;
+        is_charging_station = false;
+        status = "";
     }
 
     public int getNum_bikes_available() {
