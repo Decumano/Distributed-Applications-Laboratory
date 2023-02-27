@@ -1,9 +1,9 @@
 /home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/biking/data/Data.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/biking/service/Service.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/biking/data/Client.java
 /home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/proves/Message.java
-/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/subscribe.java
-/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/covidNotif.java
-/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/freeSlotNotif.java
-/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/getClients.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/biking/service/getClients.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/biking/data/Clients.java
 /home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/proves/CreateClient.java
 /home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/biking/data/Stations.java
 /home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/biking/data/Station.java
