@@ -48,13 +48,15 @@
         </div>
         <div class="second-body">
             <div>
-                <form action="/lab/at/Subscribe" name="Subscribe" method="get">
+                <form action="/lab/at/Service/Subscribe" name="Subscribe" method="get">
+                    <input type="text" name="PhoneNumber" value="Phone Number">
+                    <input type="number" name="Station" value="Station">
                     <input type="submit" value="Subscribe">
                 </form>
-                <form action="/lab/at/Get/Stations" name="GetStations" method="get">
+                <form action="/lab/at/Service/Get/Stations" name="GetStations" method="get">
                     <input type="submit" value="Get Stations">
                 </form>
-                <form action="/lab/at/Get/Clients" name="GetClients" method="get">
+                <form action="/lab/at/Service/Get/Clients" name="GetClients" method="get">
                     <input type="submit" value="Get Clients">
                 </form>
                 <form action="/lab/at/Covid" name="Covid" method="get">
