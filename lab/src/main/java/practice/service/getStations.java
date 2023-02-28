@@ -1,7 +1,8 @@
-package practice.biking.service;
+package practice.service;
 
-import practice.biking.data.Data;
 import org.springframework.web.client.RestTemplate;
+
+import practice.data.bicing.Data;
 
 public class getStations {
     private static Data data;

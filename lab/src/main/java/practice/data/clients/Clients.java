@@ -1,4 +1,4 @@
-package practice.biking.data;
+package practice.data.clients;
 
 import java.util.ArrayList;
 import java.util.List;

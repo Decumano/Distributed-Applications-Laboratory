@@ -1,13 +1,12 @@
-package practice.biking.service;
+package practice.service;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
-
-import practice.biking.data.Clients;
-import practice.biking.data.Data;
-
 import javax.ws.rs.core.MediaType;
+
+import practice.data.bicing.Data;
+import practice.data.clients.Clients;
 
 @Path("/Get")
 public class Service {

@@ -1,9 +1,9 @@
-package practice.biking.service;
+package practice.service;
 
 import java.util.ArrayList;
 
-import practice.biking.data.Client;
-import practice.biking.data.Clients;
+import practice.data.clients.Client;
+import practice.data.clients.Clients;
 
 public class getClients {
     private static Clients clientsInfo;
