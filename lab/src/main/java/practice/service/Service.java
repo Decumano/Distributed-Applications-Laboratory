@@ -29,8 +29,8 @@ public class Service {
 
     @GET
     @Path("/Subscribe")
-    public void subscribe(@QueryParam("PhoneNumber")String PhoneNumber, @QueryParam("Station")int station)
+    public void subscribe(@QueryParam("PhoneNumber")String PhoneNumber, @QueryParam("Station")int station, @QueryParam("Token")String token)
     {
-            getClients.subscribe(PhoneNumber, station);
+            getClients.subscribe(PhoneNumber, station, token);
     }
 }

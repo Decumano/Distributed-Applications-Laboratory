@@ -2,7 +2,7 @@ package proves;
 
 public class Message {
 	private long chat_id;
-	private String text;
+	private String text;	
 
 	public Message() {
 		super();

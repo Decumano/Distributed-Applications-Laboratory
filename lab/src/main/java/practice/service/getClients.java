@@ -25,41 +25,22 @@ public class getClients {
     }
 
     static public Clients getClientsData()
-    {
-        // Test
-
-        if (clientsInfo == null)
-            clientsInfo = new Clients();
-
-        Client c1 = new Client("656648346", new ArrayList<Integer>(), "6837");
-        c1.addInterestStation(2);
-        c1.addInterestStation(5);
-        c1.addInterestStation(15);
-        c1.addInterestStation(16);
-        c1.addInterestStation(22);
-        
-        Client c2 = new Client("658663895", new ArrayList<Integer>(), "674520");
-        c2.addInterestStation(1);
-        c2.addInterestStation(13);
-        c2.addInterestStation(19);
-        c2.addInterestStation(20);
-        c2.addInterestStation(30);
-
-        clientsInfo.getClients().add(c1);
-        clientsInfo.getClients().add(c2);
-
-        //Test
-        
+    {        
         return clientsInfo;
     }
 
-    static public void subscribe(String phone, int station)
+    static public void subscribe(String phone, int station, String token)
     {
         if (clientsInfo == null)
             clientsInfo = new Clients();
         if (clientsInfo.hasClient(phone))
-            clientsInfo.getClient(phone).addInterestStation(station);
+        {
+            Client c = clientsInfo.getClient(phone);
+            c.addInterestStation(station);
+            if (!(c.getTelegramToken() == token))
+                c.setTelegramToken(token);
+        }
         else
-            clientsInfo.getClients().add(new Client(phone, station, ""));
+            clientsInfo.getClients().add(new Client(phone, station, token));
     }
 }

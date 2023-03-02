@@ -28,6 +28,7 @@ public class Client {
      */
     public Client(String phoneNumber, int interestStation, String telegramToken) {
         this.phoneNumber = phoneNumber;
+        this.interestStations = new ArrayList<Integer> ();
         this.interestStations.add(interestStation);
         this.telegramToken = telegramToken;
     }
@@ -72,11 +73,33 @@ public class Client {
     }
 
     /**
+     * Checks if there is a certain station
+     * @param interestStation
+     * @return True/False
+     */
+    public boolean hasInterestStation(int interestStation)
+    {
+        int size = interestStations.size();
+        for (int i = 0; i < size; i++)
+        {
+            int s = interestStations.get(i);
+            if (s == interestStation)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
      * Method to add a single stationt to the interest stations list
      */
     public void addInterestStation(int interestStation)
     {
-        interestStations.add(interestStation);
+        if (interestStations == null)
+            interestStations = new ArrayList<Integer>();
+        if (!hasInterestStation(interestStation))
+            interestStations.add(interestStation);
     }
 
     /**
