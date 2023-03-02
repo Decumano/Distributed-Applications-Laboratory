@@ -1,7 +1,5 @@
 package practice.service;
 
-import java.util.ArrayList;
-
 import practice.data.clients.Client;
 import practice.data.clients.Clients;
 
@@ -37,7 +35,7 @@ public class getClients {
         {
             Client c = clientsInfo.getClient(phone);
             c.addInterestStation(station);
-            if (!(c.getTelegramToken() == token))
+            if (!(c.getTelegramToken().equals(token)))
                 c.setTelegramToken(token);
         }
         else

@@ -42,7 +42,7 @@ public class Clients {
         for (int i = 0; i < size; i++)
         {
             Client c = clients.get(i);
-            if (c.getPhoneNumber() == phone)
+            if (c.getPhoneNumber().equals(phone))
             {
                 return true;
             }
@@ -56,7 +56,7 @@ public class Clients {
         for (int i = 0; i < size; i++)
         {
             Client c = clients.get(i);
-            if (c.getPhoneNumber() == phone)
+            if (c.getPhoneNumber().equals(phone))
             {
                 return c;
             }
