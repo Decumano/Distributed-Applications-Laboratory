@@ -1,4 +1,4 @@
-package practice.biking.data;
+package practice.data.bicing;
 
 public class Station {
     private int station_id;

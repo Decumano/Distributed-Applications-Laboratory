@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /home/edgar/Escriptori/Distributed Applications/Project/Distributed-Applications-Laboratory/lab/src/main/java/freeSlotNotif.java
 /home/edgar/Escriptori/Distributed Applications/Project/Distributed-Applications-Laboratory/lab/src/main/java/practice/biking/service/getStations.java
 /home/edgar/Escriptori/Distributed Applications/Project/Distributed-Applications-Laboratory/lab/src/main/java/proves/CreateClient.java
@@ -8,3 +9,15 @@
 /home/edgar/Escriptori/Distributed Applications/Project/Distributed-Applications-Laboratory/lab/src/main/java/proves/Message.java
 /home/edgar/Escriptori/Distributed Applications/Project/Distributed-Applications-Laboratory/lab/src/main/java/practice/biking/data/Station.java
 /home/edgar/Escriptori/Distributed Applications/Project/Distributed-Applications-Laboratory/lab/src/main/java/covidNotif.java
+=======
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/bicing/Station.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/bicing/Data.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/service/getStations.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/bicing/Stations.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/service/getClients.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/proves/Message.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/service/Service.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/clients/Clients.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/clients/Client.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/proves/CreateClient.java
+>>>>>>> 138a59088c60b38cf693f429f98da5cd101510f6
