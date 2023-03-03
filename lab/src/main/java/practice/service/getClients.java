@@ -31,7 +31,7 @@ public class getClients {
     {
         if (clientsInfo == null)
             clientsInfo = new Clients();
-        if (clientsInfo.hasClient(phone))
+        else if (clientsInfo.hasClient(phone))
         {
             Client c = clientsInfo.getClient(phone);
             c.addInterestStation(station);
