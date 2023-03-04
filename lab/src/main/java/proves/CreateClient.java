@@ -9,7 +9,8 @@ import javax.ws.rs.core.MediaType;
 public class CreateClient {
 
 	public static void main(String[] args) {
-		Message message = new Message(905976558, "Message");
+		long id = 5925337525L;  
+		Message message = new Message(id, "Message");
 		Client client = ClientBuilder.newClient();
 		WebTarget targetSendMessage = client.target("https://api.telegram.org").path("/bot5558130347:AAFAjEGRwEjmSnnZGbQU7ZmV-2ayjCM4jeU/sendMessageRequest");
 		String response = targetSendMessage.request().post(Entity.entity(message, MediaType.APPLICATION_JSON_TYPE),

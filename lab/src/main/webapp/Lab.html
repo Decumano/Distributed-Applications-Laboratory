@@ -40,18 +40,21 @@
             background-color: transparent;
         }
     </style>
-    <BODY BGCOLOR="#020929">
+    <BODY BGCOLOR="8EC1F1">
         <div class = "title"><FONT COLOR=white>
             <h1>
                 Lab
             </h1>
         </div>
-        <div class="second-body">
+        <div class="second-body"><FONT COLOR=000000>
             <div>
                 <form action="/lab/at/Service/Subscribe" name="Subscribe" method="get">
-                    <input type="text" name="PhoneNumber" value="">
-                    <input type="number" name="Station" value="Station">
-                    <input type="text" name="Token" value="">
+                    <label>Enter phone number: (9 digits)</label><br>
+                    <input type="tel" name="PhoneNumber" value="" pattern="[0-9]{9}"><br>
+                    <label>Enter you chat token:</label><br>
+                    <input type="text" name="Token" value=""><br>
+                    <label>Enter station:</label><br>
+                    <input type="number" name="Station" value="Station" multiple><br><br>
                     <input type="submit" value="Subscribe">
                 </form>
                 <form action="/lab/at/Service/Get/Stations" name="GetStations" method="get">

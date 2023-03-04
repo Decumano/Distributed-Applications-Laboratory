@@ -1,10 +1,10 @@
-/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/bicing/Station.java
-/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/bicing/Data.java
-/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/service/getStations.java
-/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/bicing/Stations.java
-/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/service/getClients.java
-/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/proves/Message.java
-/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/service/Service.java
-/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/clients/Clients.java
-/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/clients/Client.java
-/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/proves/CreateClient.java
+/home/edgar/Escriptori/Distributed Applications/Project/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/bicing/Data.java
+/home/edgar/Escriptori/Distributed Applications/Project/Distributed-Applications-Laboratory/lab/src/main/java/practice/service/Service.java
+/home/edgar/Escriptori/Distributed Applications/Project/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/bicing/Stations.java
+/home/edgar/Escriptori/Distributed Applications/Project/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/clients/Clients.java
+/home/edgar/Escriptori/Distributed Applications/Project/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/bicing/Station.java
+/home/edgar/Escriptori/Distributed Applications/Project/Distributed-Applications-Laboratory/lab/src/main/java/practice/service/getStations.java
+/home/edgar/Escriptori/Distributed Applications/Project/Distributed-Applications-Laboratory/lab/src/main/java/practice/service/getClients.java
+/home/edgar/Escriptori/Distributed Applications/Project/Distributed-Applications-Laboratory/lab/src/main/java/proves/CreateClient.java
+/home/edgar/Escriptori/Distributed Applications/Project/Distributed-Applications-Laboratory/lab/src/main/java/proves/Message.java
+/home/edgar/Escriptori/Distributed Applications/Project/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/clients/Client.java
