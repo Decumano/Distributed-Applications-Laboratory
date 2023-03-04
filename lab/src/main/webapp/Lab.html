@@ -1,86 +1,105 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 
 <HTML>
-    <HEAD><TITLE>Seminar 3 Test page</TITLE></HEAD>
-    <style>
-        html {
-            display: table;
-        }
-        body {
-            display:flex;
-            justify-content:center;
-            flex-direction: column;
-        }
-        html, body {
-            width: 99%;
-            height: 99%;
-            margin-left: 0.5%;
-            margin-top: 0.5%;
-            margin-right: 0.5%;
-            margin-bottom: 0.5%;
-        }
-        .second-body, .title {
-            display:flex;
-            flex-direction: row;
-            margin: 0;
-            position: absolute;
-        }
-        .title {
-            top: 10%;
-            left: 50%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            background-color: transparent;
-        }
-        .second-body{
-            top: 50%;
-            left: 50%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            background-color: transparent;
-        }
-    </style>
-    <BODY BGCOLOR="8EC1F1">
-        <div class = "title"><FONT COLOR=white>
-            <h1>
-                Lab
-            </h1>
-        </div>
-        <div class="second-body"><FONT COLOR=000000>
-            <div>
-                <form action="/lab/at/Service/Subscribe" name="Subscribe" method="get">
-                    <label>Enter phone number: (9 digits)</label><br>
-                    <input type="tel" name="PhoneNumber" value="" pattern="[0-9]{9}"><br>
-                    <label>Enter you chat token:</label><br>
-                    <input type="text" name="Token" value=""><br>
-                    <label>Enter station:</label><br>
-                    <input type="number" name="Station" value="Station" multiple><br><br>
-                    <input type="submit" value="Subscribe">
-                </form>
-                <form action="/lab/at/Service/Get/Stations" name="GetStations" method="get">
-                    <input type="submit" value="Get Stations">
-                </form>
-                <form action="/lab/at/Service/Get/Clients" name="GetClients" method="get">
-                    <input type="submit" value="Get Clients">
-                </form>
-                <form action="/lab/at/Covid" name="Covid" method="get">
-                    <input type="submit" value="Get Covid news">
-                </form>
-                <form action="/lab/at/FreeSlots" name="GetFreeSlotes" method="get">
-                    <input type="submit" value="Get Free Slotes">
-                </form>
-            </div>
-        </div>
-    </BODY>
-</HTML><!DOCTYPE html>
+<HEAD>
+<TITLE>Distributed Apps Final Project</TITLE>
+</HEAD>
+<style>
+html {
+	display: table;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+html, body {
+	width: 99%;
+	height: 99%;
+	margin-left: 0.5%;
+	margin-top: 0.5%;
+	margin-right: 0.5%;
+	margin-bottom: 0.5%;
+}
+
+.second-body, .title {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	position: absolute;
+}
+
+.title {
+	top: 10%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background-color: transparent;
+}
+
+.second-body {
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background-color: transparent;
+}
+</style>
+<BODY BGCOLOR="8EC1F1">
+	<div class="title">
+		<FONT COLOR=white>
+			<h1>Lab</h1>
+	</div>
+	<div class="second-body">
+		<FONT COLOR=000000>
+			<div>
+				<form action="/lab/at/Service/Subscribe" name="Subscribe"
+					method="get">
+					<label>Enter phone number: (9 digits)</label><br> <input
+						type="tel" name="PhoneNumber" value="" pattern="[0-9]{9}"><br>
+					<label>Enter you chat token:</label><br> <input type="text"
+						name="Token" value=""><br> <label>Enter
+						station:</label><br> <input type="number" name="Station"
+						value="Station" min="1" max="219">
+						<p><strong>Note:</strong> you can only subscribe to 1 station at a time.</p>
+						<input type="submit" value="Subscribe">
+				</form>
+				<form action="/lab/at/Service/Get/Stations" name="GetStations"
+					method="get" target="stations_frame"><br>
+					<input type="submit" value="Get Stations"><br>
+					<iframe src="about:blank" name="stations_frame" height="250" width="400"
+						allowTransparency="true" scrolling="yes" frameborder="0">
+					</iframe>
+					<br>
+				</form>
+				<form action="/lab/at/Service/Get/Clients" name="GetClients"
+					method="get" target="clients_frame">
+					<input type="submit" value="Get Clients">
+					<iframe src="about:blank" name="clients_frame" height="250" width="400"
+						allowTransparency="true" scrolling="yes" frameborder="0">
+					</iframe>
+				</form>
+				<form action="/lab/at/Covid" name="Covid" method="get">
+					<input type="submit" value="Get Covid news">
+				</form>
+				<form action="/lab/at/FreeSlots" name="GetFreeSlotes" method="get">
+					<input type="submit" value="Get Free Slotes">
+				</form>
+			</div>
+	</div>
+</BODY>
+</HTML>
+<!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-  </body>
+<head>
+<meta charset="utf-8">
+<title></title>
+</head>
+<body>
+	<header></header>
+	<main></main>
+	<footer></footer>
+</body>
 </html>
