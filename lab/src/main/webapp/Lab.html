@@ -52,8 +52,17 @@ html, body {
 
 .second-body {
 	top: 10%;
-	left: 50%;
+	left: 0%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
 	background-color: transparent;
+}
+
+.formActions {
+	width: 50%;
+	min-height: 100px;
+	float: left;
 }
 </style>
 <BODY BGCOLOR="8EC1F1">
@@ -63,7 +72,7 @@ html, body {
 	</div>
 	<div class="second-body">
 		<FONT COLOR=000000>
-			<div>
+			<div class="formActions">
 				<form action="/lab/at/Service/Subscribe" name="Subscribe"
 					method="get">
 					<label>Enter phone number: (9 digits)</label><br> <input
@@ -76,21 +85,14 @@ html, body {
 						<input type="submit" value="Subscribe">
 				</form>
 			</div>
-            <div>
+            <div class="formActions">
 				<form action="/lab/at/Service/Get/Stations" name="GetStations"
-					method="get" target="stations_frame"><br>
+					method="get" target="output_frame"><br>
 					<input type="submit" value="Get Stations"><br>
-					<iframe src="about:blank" name="stations_frame" height="250" width="400"
-						allowTransparency="true" scrolling="yes" frameborder="0">
-					</iframe>
-					<br>
 				</form>
 				<form action="/lab/at/Service/Get/Clients" name="GetClients"
-					method="get" target="clients_frame">
+					method="get" target="output_frame">
 					<input type="submit" value="Get Clients">
-					<iframe src="about:blank" name="clients_frame" height="250" width="400"
-						allowTransparency="true" scrolling="yes" frameborder="0">
-					</iframe>
 				</form>
 				<form action="/lab/at/Covid" name="Covid" method="get">
 					<input type="submit" value="Get Covid news">
@@ -99,6 +101,12 @@ html, body {
 					<input type="submit" value="Get Free Slotes">
 				</form>
             </div>
+			<div class="formActions">
+				<iframe src="about:blank" name="output_frame" height="250" width="400"
+				allowTransparency="true" scrolling="yes" frameborder="0">
+				</iframe>
+				<br>
+			</div>
 	</div>
 </BODY>
 </HTML>
