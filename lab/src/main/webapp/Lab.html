@@ -4,15 +4,31 @@
 <HEAD>
 <TITLE>Distributed Apps Final Project</TITLE>
 </HEAD>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+
 html {
 	display: table;
 }
 
 body {
 	display: flex;
-	justify-content: center;
-	flex-direction: column;
+	flex-direction: row;
 }
 
 html, body {
@@ -25,25 +41,18 @@ html, body {
 }
 
 .second-body, .title {
-	display: flex;
-	flex-direction: row;
 	margin: 0;
-	position: absolute;
+	position: relative;
 }
 
 .title {
-	top: 10%;
 	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
 	background-color: transparent;
 }
 
 .second-body {
-	top: 50%;
+	top: 10%;
 	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
 	background-color: transparent;
 }
 </style>
@@ -66,6 +75,8 @@ html, body {
 						<p><strong>Note:</strong> you can only subscribe to 1 station at a time.</p>
 						<input type="submit" value="Subscribe">
 				</form>
+			</div>
+            <div>
 				<form action="/lab/at/Service/Get/Stations" name="GetStations"
 					method="get" target="stations_frame"><br>
 					<input type="submit" value="Get Stations"><br>
@@ -87,7 +98,7 @@ html, body {
 				<form action="/lab/at/FreeSlots" name="GetFreeSlotes" method="get">
 					<input type="submit" value="Get Free Slotes">
 				</form>
-			</div>
+            </div>
 	</div>
 </BODY>
 </HTML>
