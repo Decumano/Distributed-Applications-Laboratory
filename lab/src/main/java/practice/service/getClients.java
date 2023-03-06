@@ -24,14 +24,15 @@ public class getClients {
 
     static public Clients getClientsData()
     {        
+        if (clientsInfo == null)  clientsInfo = new Clients();
         return clientsInfo;
     }
 
-    static public void subscribe(String phone, int station, String token)
+    static public String subscribe(String phone, int station, String token)
     {
         if (clientsInfo == null)
             clientsInfo = new Clients();
-        else if (clientsInfo.hasClient(phone))
+        if (clientsInfo.hasClient(phone))
         {
             Client c = clientsInfo.getClient(phone);
             c.addInterestStation(station);
@@ -40,5 +41,7 @@ public class getClients {
         }
         else
             clientsInfo.getClients().add(new Client(phone, station, token));
+        
+        return "Succesfully updated.";
     }
 }
