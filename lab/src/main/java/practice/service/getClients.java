@@ -42,6 +42,6 @@ public class getClients {
         else
             clientsInfo.getClients().add(new Client(phone, station, token));
         
-        return "Succesfully updated.";
+        return "<HTML><body><p>Succesfully updated.</p></body></HTML>";
     }
 }
