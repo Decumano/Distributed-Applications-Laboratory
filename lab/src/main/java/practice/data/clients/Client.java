@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Client {
     private String phoneNumber;
-    private List<Integer> interestStations;     // Id liist of all the Stations the user is interested in
+    private List<Integer> interestStations;     // Id list of all the Stations the user is interested in
     private String telegramToken;                  // Token of the bot
 
     /**
@@ -116,4 +116,5 @@ public class Client {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
 }
