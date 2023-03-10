@@ -8,6 +8,7 @@ import javax.ws.rs.core.MediaType;
 
 import practice.data.bicing.Data;
 import practice.data.clients.Clients;
+import practice.data.covid.CovidRegions;
 
 @Path("/Service")
 public class Service {
@@ -32,5 +33,13 @@ public class Service {
     public void subscribe(@QueryParam("PhoneNumber")String PhoneNumber, @QueryParam("Station")int station, @QueryParam("Token")String token)
     {
             getClients.subscribe(PhoneNumber, station, token);
+    }
+
+    @GET
+    @Path("/Get/CovidInfo")
+    @Produces(MediaType.APPLICATION_JSON)
+    public CovidRegions getCovidInfo()
+    {
+        return getCovidInfo.getRegionData();
     }
 }

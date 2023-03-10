@@ -105,6 +105,20 @@ html, body {
 		xmlhttp.send();
 	}
 
+	function getCovidInfo()
+	{
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.onreadystatechange = function()
+		{
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+			{
+				document.getElementById("output_frame").innerHTML = xmlhttp.responseText;
+			}
+		};
+		xmlhttp.open("GET", "/lab/at/Service/Get/CovidInfo", true);
+		xmlhttp.send();
+	}
+
 	function station(xml)
 	{
 		var doc = xml.responseText;
@@ -153,7 +167,7 @@ html, body {
 				method="get"><br>
 				<input type="submit" value="get Clients"></form>
 
-				<form action="#" name="GetCovidInfo" onsubmit="return false"
+				<form action="#" name="GetCovidInfo" onsubmit="getCovidInfo();return false"
 				method="get"><br>
 				<input type="submit" value="get Covid Info"></form>
 
