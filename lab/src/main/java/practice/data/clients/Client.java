@@ -11,7 +11,7 @@ public class Client {
     /**
      * Creator of the class with defined values
      * @param phoneNumber the phone number of the created client
-     * @param interestSations the list of all the stations id the client is interested in
+     * @param interestStations the list of all the stations id the client is interested in
      * @param telegramToken the token of the bot the client is tied with
      */
     public Client(String phoneNumber, List<Integer> interestStations, String telegramToken) {
@@ -23,7 +23,7 @@ public class Client {
     /**
      * Creator of the class with defined values
      * @param phoneNumber the phone number of the created client
-     * @param interestSation a single station id the client is interested in
+     * @param interestStation a single station id the client is interested in
      * @param telegramToken the token of the bot the client is tied with
      */
     public Client(String phoneNumber, int interestStation, String telegramToken) {
