@@ -1,12 +1,10 @@
-package proves;
+package practice.telegram.client;
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
-
-//import practice.data.clients.*;
 
 public class CreateClient {
 

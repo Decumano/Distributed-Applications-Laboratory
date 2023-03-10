@@ -1,4 +1,4 @@
-package proves;
+package practice.telegram.client;
 
 public class Message {
 	private long chat_id;
