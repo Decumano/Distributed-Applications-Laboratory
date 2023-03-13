@@ -2,6 +2,7 @@
 
 <HTML>
 <HEAD>
+<meta charset="utf-8">
 <TITLE>Distributed Apps Final Project</TITLE>
 </HEAD>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -76,6 +77,7 @@ html, body {
 	overflow-y: auto;
 }
 </style>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <script>
 	function getStations()
 	{
@@ -118,26 +120,7 @@ html, body {
 		xmlhttp.open("GET", "/lab/at/Service/Get/CovidInfo", true);
 		xmlhttp.send();
 	}
-
-	function station(xml)
-	{
-		var doc = xml.responseText;
-		document.getElementByID("output_frame").innerHTML = "Station ID: " + doc.getElementById("station_id").value
-		+ "<br>Available Bikes: " + doc.getElementById("num_available_bikes").value
-		+ "<br>Available Docks" + doc.getElementById("num_available_docks").value
-		+ "<br>Last Reported" + doc.getElementById("last_reported").value
-		+ "<br>Is a Charging Station" + doc.getElementById("is_charging_station").value
-		+ "<br>Status" + doc.getElementById("status").value;
-	}
-
-	function client(xml)
-	{
-		var doc = xml.responseText;
-		document.getElementByID("output_frame").innerHTML = "Phone: " + doc.getElementById("phoneNumber").value
-		+ "<br>Telegram Token: " + doc.getElementById("telegramToken").value
-		+ "<br>Subscribed Stations" + doc.getElementById("interestStations").value;
-	}
-</script>
+	</script>
 <BODY BGCOLOR="8EC1F1">
 	<div class="title">
 		<FONT COLOR=white>
@@ -171,26 +154,18 @@ html, body {
 				method="get"><br>
 				<input type="submit" value="get Covid Info"></form>
 
-				<form action="#" name="GetFreeSlotes" onsubmit="return false"
-				method="get"><br>
-				<input type="submit" value="get Free Slotes"></form>
+				<form name="GetFreeSlots" action="/lab/at/Service/Get/FreeSlots" target="output2"
+				method="get" id="GetFreeSlots">
+				<label>Enter phone number: (9 digits)</label><br> <input
+				type="tel" name="PhoneNumber" id="PhoneNumberFreeForm" value="" pattern="[0-9]{9}"><br>
+				<input type="submit" value="get Free Slots"></form>
             </div>
 			<div class="formOutput" id="output_frame" scrolling="yes" allowTransparency="true"
 			height=50% width=100% frameborder="0" src="about:blank">
 			<br>
 			</div>
+			<iframe name="output2" id="output2" height="50%" width="80%" scrolling="yes" frameborder="0"
+			allowTransparency=true></iframe>
 	</div>
 </BODY>
 </HTML>
-<!DOCTYPE html>
-<html lang="">
-<head>
-<meta charset="utf-8">
-<title></title>
-</head>
-<body>
-	<header></header>
-	<main></main>
-	<footer></footer>
-</body>
-</html>

@@ -2,7 +2,10 @@ package practice.service;
 
 import org.springframework.web.client.RestTemplate;
 import java.lang.System;
+import java.util.List;
+
 import practice.data.bicing.Data;
+import practice.data.bicing.FreeSlotsStations;
 
 public class getStations {
     private static Data data;
