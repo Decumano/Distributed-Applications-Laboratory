@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /home/edgar/Escriptori/Distributed Applications/Project/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/bicing/Data.java
 /home/edgar/Escriptori/Distributed Applications/Project/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/bicing/Stations.java
 /home/edgar/Escriptori/Distributed Applications/Project/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/clients/Clients.java
@@ -11,3 +12,17 @@
 /home/edgar/Escriptori/Distributed Applications/Project/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/covid/CovidRegions.java
 /home/edgar/Escriptori/Distributed Applications/Project/Distributed-Applications-Laboratory/lab/src/main/java/practice/telegram/client/CreateClient.java
 /home/edgar/Escriptori/Distributed Applications/Project/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/clients/Client.java
+=======
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/telegram/client/Message.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/bicing/Station.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/covid/CovidRegion.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/bicing/Data.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/service/getStations.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/bicing/Stations.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/service/getClients.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/service/getCovidInfo.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/service/Service.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/telegram/client/CreateClient.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/clients/Clients.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/clients/Client.java
+>>>>>>> e28b09593537439cc3302a5c9bfb1cb0e5653287
