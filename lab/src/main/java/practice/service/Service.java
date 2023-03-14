@@ -58,8 +58,8 @@ public class Service {
     @GET
     @Path("/Get/CovidInfo")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<CovidRegion> getCovidInfo()
+    public void getCovidInfo()
     {
-        return getCovidInfo.getRegionData();
+        getCovidInfo.getRegionData();
     }
 }
