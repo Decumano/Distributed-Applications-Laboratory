@@ -120,23 +120,6 @@ html, body {
 		xmlhttp.open("GET", "/lab/at/Service/Get/CovidInfo", true);
 		xmlhttp.send();
 	}
-
-	$("#GetFreeSlots").submit(function(e)
-	{
-		e.preventDefault();
-
-		var form = $(this);
-		var actionUrl = "/lab/at/Service/Get/FreeSlots";
-		$.ajax({
-			type: "GET",
-			url: actionUrl,
-			data: form.serialize(),
-			success: function(text)
-			{
-				document.getElementById("output_frame").innerHTML = text.responseText;
-			}
-		});
-	});
 	</script>
 <BODY BGCOLOR="8EC1F1">
 	<div class="title">
@@ -171,7 +154,7 @@ html, body {
 				method="get"><br>
 				<input type="submit" value="get Covid Info"></form>
 
-				<form action="#" name="GetFreeSlots" onsubmit="return false"
+				<form action="/lab/at/Service/Get/FreeSlots" name="GetFreeSlots"
 				method="get" id="GetFreeSlots">
 				<label>Enter phone number: (9 digits)</label><br> <input
 				type="tel" name="PhoneNumber" id="PhoneNumberFreeForm" value="" pattern="[0-9]{9}"><br>

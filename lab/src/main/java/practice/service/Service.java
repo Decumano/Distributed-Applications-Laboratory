@@ -50,9 +50,13 @@ public class Service {
     @Produces(MediaType.APPLICATION_JSON)
     public void getFreeSlots(@RequestParam("PhoneNumber")String PhoneNumber)
     {
+<<<<<<< HEAD
         List<Integer> c = getClients.getClientsData().getClient(PhoneNumber).getInterestStations();//getStations.getFreeSlots(PhoneNumber);
         Data s = getStations.getStationsData();
         s.getFreeSlots(c);
+=======
+        return getClients.getFreeSlots(PhoneNumber);
+>>>>>>> a1a979fb562220c91c71e9bbc8442e6ed7583eac
     }
 
     @GET
