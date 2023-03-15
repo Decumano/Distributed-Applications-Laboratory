@@ -48,11 +48,11 @@ public class Service {
     @GET
     @Path("/Get/FreeSlots")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<FreeSlotsStations> getFreeSlots(@RequestParam("PhoneNumber")String PhoneNumber)
+    public void getFreeSlots(@RequestParam("PhoneNumber")String PhoneNumber)
     {
         List<Integer> c = getClients.getClientsData().getClient(PhoneNumber).getInterestStations();//getStations.getFreeSlots(PhoneNumber);
         Data s = getStations.getStationsData();
-        return s.getFreeSlots(c);
+        s.getFreeSlots(c);
     }
 
     @GET
