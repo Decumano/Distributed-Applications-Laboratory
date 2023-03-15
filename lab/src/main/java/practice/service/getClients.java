@@ -1,5 +1,10 @@
 package practice.service;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import practice.data.bicing.Data;
+import practice.data.bicing.FreeSlotsStations;
 import practice.data.clients.Client;
 import practice.data.clients.Clients;
 
@@ -43,5 +48,16 @@ public class getClients {
             clientsInfo.getClients().add(new Client(phone, station, token));
         
         return "<HTML><body><p>Succesfully updated.</p></body></HTML>";
+    }
+
+    static public List<FreeSlotsStations> getFreeSlots(String PhoneNumber)
+    {
+        List<Integer> c;
+        if (clientsInfo.hasClient(PhoneNumber))
+            c = clientsInfo.getClient(PhoneNumber).getInterestStations();//getStations.getFreeSlots(PhoneNumber);
+        
+        else c = new ArrayList<Integer>() {};
+        Data s = getStations.getStationsData();
+        return s.getFreeSlots(c);
     }
 }

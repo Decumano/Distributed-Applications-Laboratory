@@ -2,6 +2,7 @@
 /home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/telegram/client/Message.java
 /home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/covid/CovidRegion.java
 /home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/bicing/Data.java
+/home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/service/getCovidInfo2.java
 /home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/data/bicing/Stations.java
 /home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/service/getCovidInfo.java
 /home/decumano/Documents/GitHub/Distributed-Applications-Laboratory/lab/src/main/java/practice/telegram/client/CreateClient.java
