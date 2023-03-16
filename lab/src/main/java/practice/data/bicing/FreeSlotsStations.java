@@ -23,4 +23,9 @@ public class FreeSlotsStations
         stationId = id;
         this.freeDocks = freeDocks;
     }
+
+    public String toString()
+    {
+        return "Station ID: " + Integer.toString(stationId) + "\nFree Docks: " + Integer.toString(freeDocks) + "\n";
+    }
 }
