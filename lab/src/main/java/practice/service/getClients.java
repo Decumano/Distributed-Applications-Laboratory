@@ -50,7 +50,7 @@ public class getClients {
         return "<HTML><body><p>Succesfully updated.</p></body></HTML>";
     }
 
-    static public List<FreeSlotsStations> getFreeSlots(String PhoneNumber)
+    static public void getFreeSlots(String PhoneNumber)
     {
         List<Integer> c;
         if (clientsInfo.hasClient(PhoneNumber))
@@ -58,6 +58,6 @@ public class getClients {
         
         else c = new ArrayList<Integer>() {};
         Data s = getStations.getStationsData();
-        return s.getFreeSlots(c);
+        s.getFreeSlots(c);
     }
 }
