@@ -50,7 +50,7 @@ public class Service {
 	@GET
 	@Path("/Get/FreeSlots")
 	@Produces(MediaType.APPLICATION_JSON)
-	public void getFreeSlots(@QueryParam("PhoneNumber") String PhoneNumber) {
+	public void getFreeSlots(@QueryParam("PhoneNumber2") String PhoneNumber) {
 		if (getClients.getClientsData().hasClient(PhoneNumber)) {
 			List<Integer> c = getClients.getClientsData().getClient(PhoneNumber).getInterestStations();
 			Data s = getStations.getStationsData();
