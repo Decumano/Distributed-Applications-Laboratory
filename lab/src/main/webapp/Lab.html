@@ -8,19 +8,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 ::-webkit-scrollbar {
-    width: 10px;
+	width: 10px;
 }
 
-::-webkit-scrollbar-track{
-    background: #f1f1f1;
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
 }
 
-::-webkit-scrollbar-thumb{
-    background: #888;
+::-webkit-scrollbar-thumb {
+	background: #888;
 }
 
-::-webkit-scrollbar-thumb:hover{
-    background: #555;
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
 }
 
 html {
@@ -79,13 +79,10 @@ html, body {
 </style>
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <script>
-	function getStations()
-	{
+	function getStations() {
 		var xmlhttp = new XMLHttpRequest();
-		xmlhttp.onreadystatechange = function()
-		{
-			if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
-			{
+		xmlhttp.onreadystatechange = function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 				document.getElementById("output_frame").innerHTML = xmlhttp.responseText;
 			}
 		};
@@ -93,13 +90,10 @@ html, body {
 		xmlhttp.send();
 	}
 
-	function getClients()
-	{
+	function getClients() {
 		var xmlhttp = new XMLHttpRequest();
-		xmlhttp.onreadystatechange = function()
-		{
-			if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
-			{
+		xmlhttp.onreadystatechange = function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 				document.getElementById("output_frame").innerHTML = xmlhttp.responseText;
 			}
 		};
@@ -107,20 +101,17 @@ html, body {
 		xmlhttp.send();
 	}
 
-	function getCovidInfo()
-	{
+	function getCovidInfo() {
 		var xmlhttp = new XMLHttpRequest();
-		xmlhttp.onreadystatechange = function()
-		{
-			if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
-			{
+		xmlhttp.onreadystatechange = function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 				document.getElementById("output_frame").innerHTML = xmlhttp.responseText;
 			}
 		};
 		xmlhttp.open("GET", "/lab/at/Service/Get/CovidInfo", true);
 		xmlhttp.send();
 	}
-	</script>
+</script>
 <BODY BGCOLOR="8EC1F1">
 	<div class="title">
 		<FONT COLOR=white>
@@ -129,40 +120,49 @@ html, body {
 	<div class="second-body">
 		<FONT COLOR=000000>
 			<div class="formActions">
-				<form id="subscriptionForm" action="/lab/at/Service/Subscribe" name="Subscribe"
-				mathod="get"><br>
-					<label>Enter phone number: (9 digits)</label><br> <input
+				<form id="subscriptionForm" action="/lab/at/Service/Subscribe"
+					name="Subscribe" mathod="get">
+					<br> <label>Enter phone number: (9 digits)</label><br> <input
 						type="tel" name="PhoneNumber" value="" pattern="[0-9]{9}"><br>
 					<label>Enter you chat token:</label><br> <input type="text"
 						name="Token" value=""><br> <label>Enter
 						station:</label><br> <input type="number" name="Station"
 						value="Station" min="1" max="219">
-						<p><strong>Note:</strong> you can only subscribe to 1 station at a time.</p>
-						<input type="submit" value="Subscribe">
+					<p>
+						<strong>Note:</strong> you can only subscribe to 1 station at a
+						time.
+					</p>
+					<input type="submit" value="Subscribe">
 				</form>
 			</div>
-            <div class="formActions">
-				<form action="#" name="GetStations" onsubmit="getStations();return false"
-				method="get"><br>
-				<input type="submit" value="get Stations"></form>
+			<div class="formActions">
+				<form action="#" name="GetStations"
+					onsubmit="getStations();return false" method="get">
+					<br> <input type="submit" value="get Stations">
+				</form>
 
-				<form action="#" name="GetClients" onsubmit="getClients();return false"
-				method="get"><br>
-				<input type="submit" value="get Clients"></form>
+				<form action="#" name="GetClients"
+					onsubmit="getClients();return false" method="get">
+					<br> <input type="submit" value="get Clients">
+				</form>
 
-				<form action="#" name="GetCovidInfo" onsubmit="getCovidInfo();return false"
-				method="get"><br>
-				<input type="submit" value="get Covid Info"></form>
+				<form action="#" name="GetCovidInfo"
+					onsubmit="getCovidInfo();return false" method="get">
+					<br> <input type="submit" value="get Covid Info">
+				</form>
 
 				<form action="/lab/at/Service/Get/FreeSlots" name="GetFreeSlots"
-				method="get" id="GetFreeSlots">
-				<label>Enter phone number: (9 digits)</label><br> <input
-				type="tel" name="PhoneNumber" id="PhoneNumberFreeForm" value="" pattern="[0-9]{9}"><br>
-				<input type="submit" value="get Free Slots"></form>
-            </div>
-			<div class="formOutput" id="output_frame" scrolling="yes" allowTransparency="true"
-			height=50% width=100% frameborder="0" src="about:blank">
-			<br>
+					method="get" id="GetFreeSlots">
+					<label>Enter phone number: (9 digits)</label><br> <input
+						type="tel" name="PhoneNumber2" id="PhoneNumberFreeForm" value=""
+						pattern="[0-9]{9}"><br> <input type="submit"
+						value="get Free Slots">
+				</form>
+			</div>
+			<div class="formOutput" id="output_frame" scrolling="yes"
+				allowTransparency="true" height=50% width=100% frameborder="0"
+				src="about:blank">
+				<br>
 			</div>
 	</div>
 </BODY>
